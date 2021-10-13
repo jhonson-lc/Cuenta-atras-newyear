@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Roboto Slab', serif;
+    background-image: url(/img/nature.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.title {
+    font-size: 5rem;
+}
+
+.calendar__container {
+    display: flex;
+    font-size: 8rem;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+    font-weight: bold;
+}
+
+.date {
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+    background: rgba( 255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.days::after {
+    content: 'Days';
+    font-size: 2rem;
+    position: absolute;
+    bottom: 0rem;
+    left: 0;
+    right: 0;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.hours::after {
+    content: 'Hours';
+    font-size: 2rem;
+    position: absolute;
+    bottom: 0rem;
+    left: 0;
+    right: 0;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.minutes::after {
+    font-size: 1.5rem;
+    content: 'Minutes';
+    position: absolute;
+    bottom: 0rem;
+    left: 0;
+    right: 0;
+    font-weight: 100;
+}
+
+.seconds::after {
+    content: 'Seconds';
+    font-size: 2rem;
+    position: absolute;
+    font-size: 1.5rem;
+    bottom: 0rem;
+    left: 0;
+    right: 0;
+    font-weight: 100;
+}
+
+.calendar__copy {
+    width: 70%;
+    margin-top: 6rem;
+    text-align: justify;
+}
